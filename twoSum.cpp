@@ -3,15 +3,28 @@
 //
 #include "catch.hpp"
 #include <iostream>
+#include <vector>
+#include <map>
 
 using namespace std;
 
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        for (int i = 0; i < nums.size(); ++i) {
+    vector<int> twoSum(vector<int> &numbers, int target) {
+        vector<int> res;
+        map<int,int> mp;
+        int find;
 
+        for (int i = 0; i < numbers.size() ; ++i) {
+            find = mp[target-numbers[i]];
+            if(find){
+                res.push_back(find);
+                res.push_back(i);
+                break;
+            }
+            mp[numbers[i]] = i;
         }
+        return res;
     }
 };
 
@@ -28,42 +41,10 @@ TEST_CASE("two sum case", "two sum") {
     vector<int> expectedOutput = {6,7};
     vector<int> actualOutput = solution.twoSum(fooArray,target);
 
+    /*
+     * assert
+     * */
     REQUIRE(expectedOutput == actualOutput);
-
-
-
 
 }
 
-//#include <vector>
-//#include <iostream>
-//using namespace std;
-//
-//class Solution {
-//public:
-//    bool Find(vector<vector<int> > array,int target) {
-//        int rowCount = array.size();
-//        int colCount = array[0].size();
-//        for (int i = rowCount-1,j = 0; i>=0 && j<=colCount;) {
-//            if (array[i][j] == target) {
-//                return true;
-//            }
-//            if (array[i][j] > target) {
-//                i--;
-//                continue;
-//            }
-//            if (array[i][j] < target) {
-//                j++;
-//                continue;
-//            }
-//        }
-//        return false;
-//    }
-//};
-//int main() {
-//    Solution solution;
-//    vector<vector<int> > a = {{1,2,3,4,5},{2,3,4,5,6},{3,4,5,6,7},{4,5,6,7,8},{5,6,7,8,9}};
-//    bool flag = solution.Find(a,10);
-//    cout<<flag<<endl;
-//    return 0;
-//}

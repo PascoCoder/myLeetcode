@@ -17,7 +17,6 @@ struct ListNode {
 
 class Solution {
 public:
-
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode *res = NULL;
         ListNode *lastNode = NULL;
@@ -29,12 +28,13 @@ public:
             carry = (val1 + val2 + carry) / 10;
             if (!res) {
                 res = newNode;
-                lastNode = res;
             }
-            lastNode->next = newNode;
+            if (lastNode) {
+             lastNode->next = newNode;
+            }
             lastNode = newNode;
-            l1 = l1->next;
-            l2 = l2->next;
+            l1 = l1 ? l1->next : NULL;
+            l2 = l2 ? l2->next : NULL;
         }
         if (carry) {
             ListNode *carryNode = new ListNode(carry);
@@ -65,20 +65,40 @@ TEST_CASE("add two numbers case","add two numbers") {
     l5->next = l6;
 
     /*
-     * expected output and actual output
+     * case1 expected output and actual output
      * */
-    vector<int> expectedOutput = {3, 7, 1, 1};
-    vector<int> actualOutput;
+    vector<int> case1ExpectedOutput = {3, 7, 1, 1};
+    vector<int> case1ActualOutput;
     ListNode *res = solution.addTwoNumbers(l1, l4);
     while (res) {
-        actualOutput.push_back(res->val);
+        case1ActualOutput.push_back(res->val);
         res = res->next;
     }
 
     /*
-     * assert
+     * case1 assert
      * */
-    REQUIRE(actualOutput == expectedOutput);
+    REQUIRE(case1ActualOutput == case1ExpectedOutput);
 
+    /*
+     * case2
+     * */
+    ListNode *foo = new ListNode(0);
+    ListNode *bar = new ListNode(0);
 
+    /*
+     * case2 expected output and actual output
+     * */
+    vector<int> case2ExpectedOutput = {0};
+    vector<int> case2ActualOutput;
+    ListNode *case2res = solution.addTwoNumbers(foo, bar);
+    while (case2res) {
+        case2ActualOutput.push_back(case2res->val);
+        case2res = case2res->next;
+    }
+
+    /*
+     * case2 assert
+     * */
+    REQUIRE(case2ExpectedOutput == case2ActualOutput);
 }

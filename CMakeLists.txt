@@ -3,5 +3,5 @@ project(myLeetcode)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp catch.hpp twoSum.cpp addTwoNumbers.cpp)
+set(SOURCE_FILES main.cpp catch.hpp 001twoSum.cpp 002addTwoNumbers.cpp)
 add_executable(myLeetcode ${SOURCE_FILES})

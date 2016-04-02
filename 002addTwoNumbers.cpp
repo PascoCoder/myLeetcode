@@ -44,7 +44,7 @@ public:
     }
 };
 
-TEST_CASE("add two numbers case","add two numbers") {
+TEST_CASE("Case 1") {
     /*
      * case 1
      * */
@@ -80,6 +80,11 @@ TEST_CASE("add two numbers case","add two numbers") {
      * */
     REQUIRE(case1ActualOutput == case1ExpectedOutput);
 
+
+}
+
+TEST_CASE("case 2") {
+    Solution solution;
     /*
      * case2
      * */
@@ -101,4 +106,5 @@ TEST_CASE("add two numbers case","add two numbers") {
      * case2 assert
      * */
     REQUIRE(case2ExpectedOutput == case2ActualOutput);
+
 }

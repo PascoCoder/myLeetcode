@@ -28,7 +28,7 @@ public:
     }
 };
 
-TEST_CASE("two sum case", "two sum") {
+TEST_CASE("two sum case 1") {
     /*
      * case 1
      * */

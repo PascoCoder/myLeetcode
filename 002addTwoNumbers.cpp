@@ -44,7 +44,7 @@ public:
     }
 };
 
-TEST_CASE("Case 1") {
+TEST_CASE("add two numbers case 1") {
     /*
      * case 1
      * */
@@ -83,7 +83,7 @@ TEST_CASE("Case 1") {
 
 }
 
-TEST_CASE("case 2") {
+TEST_CASE("add two numbers case 2") {
     Solution solution;
     /*
      * case2

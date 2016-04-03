@@ -41,7 +41,7 @@ public:
 };
 
 
-TEST_CASE("case 1","length Of Longest Substring"){
+TEST_CASE("length Of Longest Substring case 1") {
     Solution solution;
     string s = "abcdefgeabc";
 

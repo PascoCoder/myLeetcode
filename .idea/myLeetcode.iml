@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/004medianOfTwoSortedArrays.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/003LongestSubstringWithoutRepeatingCharacters.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/005longestPalindromicSubstring.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

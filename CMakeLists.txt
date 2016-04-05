@@ -7,7 +7,7 @@ set(SOURCE_FILES
         main.cpp catch.hpp
         001twoSum.cpp 002addTwoNumbers.cpp
         003LongestSubstringWithoutRepeatingCharacters.cpp 004medianOfTwoSortedArrays.cpp
-        005longestPalindromicSubstring.cpp
+        005longestPalindromicSubstring.cpp 006zigZagConversion.cpp
 
         )
 add_executable(myLeetcode ${SOURCE_FILES})

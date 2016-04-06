@@ -10,5 +10,6 @@ set(SOURCE_FILES
         005longestPalindromicSubstring.cpp 006zigZagConversion.cpp
         007reverseInteger.cpp
 
+        226invertbinarytree.cpp
         )
 add_executable(myLeetcode ${SOURCE_FILES})

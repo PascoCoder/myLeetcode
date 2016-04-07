@@ -5,8 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/007reverseInteger.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/002addTwoNumbers.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/006zigZagConversion.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/008StringToInteger.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/catch.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/001twoSum.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/004medianOfTwoSortedArrays.cpp" isTestSource="false" />

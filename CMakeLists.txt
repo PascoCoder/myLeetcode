@@ -9,6 +9,7 @@ set(SOURCE_FILES
         003LongestSubstringWithoutRepeatingCharacters.cpp 004medianOfTwoSortedArrays.cpp
         005longestPalindromicSubstring.cpp 006zigZagConversion.cpp
         007reverseInteger.cpp 008StringToInteger.cpp
+        009PalindromeNumber.cpp
 
         226invertbinarytree.cpp
         )
